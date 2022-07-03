@@ -1,3 +1,49 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
+
+header {
+    font-size: 2rem;
+}
+
+#navbar {
+    position: fixed;
+    min-width: 290px;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100%;
+    border-right: solid;
+    display: block;
+}
+
+#main-doc {
+    position: absolute;
+    margin-left: 320px;
+    padding: 20px;
+}
+
+@media (max-width: 815px) {
+    #navbar ul {
+        border: 1px solid;
+        height: 200px;
+    }
+
+    #navbar {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 300px;
+        height: 100%;
+        display: block;
+        max-height: 275px;
+        border: none;
+        border-bottom: 2px solid;
+    }
+
+    #main-doc {
+        position: relative;
+        margin-left: 0px;
+        margin-top: 270px;
+    }
+}
